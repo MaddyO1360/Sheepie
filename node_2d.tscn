@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://cwrt07p30noni"]
+
+[ext_resource type="Texture2D" uid="uid://drpvcxr3v1bbu" path="res://Assets/New free backgrounds part2 - Copy/background 1/orig_big.png" id="1_wtcfe"]
+
+[node name="Node2D" type="Node2D" unique_id=1781053189]
+
+[node name="OrigBig" type="Sprite2D" parent="." unique_id=903146942]
+texture = ExtResource("1_wtcfe")
