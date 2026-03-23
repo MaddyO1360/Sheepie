@@ -97,7 +97,7 @@ tile_map_data = PackedByteArray("AAAAAPr/AQAGAAcAAAABAPr/AQAGAAcAAAACAPr/AQAGAAc
 tile_set = SubResource("TileSet_1bvp3")
 
 [node name="Player" parent="." unique_id=588926896 instance=ExtResource("3_8gbba")]
-position = Vector2(504, 158)
+position = Vector2(343, 153)
 
 [node name="Camera2D" type="Camera2D" parent="Player" unique_id=395388067]
 position = Vector2(-24.25, 4.5)
@@ -113,12 +113,11 @@ position = Vector2(102, 283)
 scale = Vector2(1.25, 1.25)
 
 [node name="Shears" parent="." unique_id=835931897 instance=ExtResource("5_kry3j")]
-position = Vector2(699, 123)
+position = Vector2(566, 2)
 rotation = -1.5707964
 scale = Vector2(2, 2)
 
 [node name="Timer" type="Timer" parent="." unique_id=1532000052]
-wait_time = 5.0
 one_shot = true
 
 [connection signal="timeout" from="Timer" to="Player" method="_on_timer_timeout"]

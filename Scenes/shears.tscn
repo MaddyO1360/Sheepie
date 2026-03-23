@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://cbgiraw2hwv4s"]
 
-[ext_resource type="Script" uid="uid://bbwt0odnlke1q" path="res://Scenes/shears.gd" id="1_rvds4"]
+[ext_resource type="Script" uid="uid://cb1py5od4nt30" path="res://Scripts/shears.gd" id="1_rvds4"]
 [ext_resource type="Texture2D" uid="uid://dl27jqis3i8bo" path="res://Assets/theshears.png" id="2_rvds4"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_hje5i"]
@@ -17,3 +17,8 @@ texture = ExtResource("2_rvds4")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1975190155]
 scale = Vector2(3, 3)
 shape = SubResource("CapsuleShape2D_hje5i")
+
+[node name="DropTimer" type="Timer" parent="." unique_id=1924658358]
+one_shot = true
+
+[connection signal="timeout" from="DropTimer" to="." method="_on_drop_timer_timeout"]

@@ -1,14 +1,15 @@
 extends CharacterBody2D
 
-@onready var whiteSheep = $CompositeSheeps/whitesheep
-@onready var lightgreySheep = $CompositeSheeps/lightgreysheep
-@onready var greySheep = $CompositeSheeps/greysheep
-@onready var darkgreySheep = $CompositeSheeps/darkgreysheep
-@onready var blackSheep = $CompositeSheeps/blacksheep
-@onready var rainbowSheep = $CompositeSheeps/rainbowsheep
+@onready var whiteSheep = $Sprite2D/whitesheep
+@onready var lightgreySheep = $Sprite2D/lightgreysheep
+@onready var greySheep = $Sprite2D/greysheep
+@onready var darkgreySheep = $Sprite2D/darkgreysheep
+@onready var blackSheep = $Sprite2D/blacksheep
+@onready var rainbowSheep = $Sprite2D/rainbowsheep
 const SPEED = 300.0
 const JUMP_VELOCITY = -500.0
 var x = 0
+'''
 var n = 0
 var sprites = {
 	1: preload("res://Assets/lightgrey_sheep.png"),
@@ -17,6 +18,8 @@ var sprites = {
 	4: preload("res://Assets/blackgrey_sheep.png"),
 	5: preload("res://Assets/rainbow_sheep.png"),
 }
+'''
+
 
 
 func _physics_process(delta: float) -> void:
@@ -36,7 +39,7 @@ func _physics_process(delta: float) -> void:
 		#changes direction of player depending on input
 		#if dir = 0 --> no movement; -1 --> left; 1 --> right
 		#$"." isn't a character to use; you should use $Sprite2D
-		$Sprite2D.flip_h = direction > 0
+		$Sprite2D.flip_h = direction < 0
 		
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
@@ -45,8 +48,13 @@ func _physics_process(delta: float) -> void:
 
 func _on_timer_timeout() -> void:
 	#change to onestop timer (have like multiple ones) later tho
-	whiteSheep.texture = sprites[1]
+	lightgreySheep.is_visible_in_tree()
+	if lightgreySheep.is_visible_in_tree() != true:
+		pass
+		
+	#
 """
+whiteSheep.texture = sprites[1]
 while n < 6:
 		n +=1
 		whiteSheep.texture = sprites[n]
