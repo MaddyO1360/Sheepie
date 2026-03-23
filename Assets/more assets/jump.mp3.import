@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://p0q1n485rybu"
+path="res://.godot/imported/jump.mp3-e32291c04cb6c7b86d6d942faf598f8e.mp3str"
+
+[deps]
+
+source_file="res://Assets/more assets/jump.mp3"
+dest_files=["res://.godot/imported/jump.mp3-e32291c04cb6c7b86d6d942faf598f8e.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

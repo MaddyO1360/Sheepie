@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://cwrt07p30noni"]
+
+[ext_resource type="Texture2D" uid="uid://drpvcxr3v1bbu" path="res://Assets/New free backgrounds part2 - Copy/background 1/orig_big.png" id="1_wtcfe"]
+
+[node name="Background" type="Node2D" unique_id=1781053189]
+
+[node name="Parallax2D" type="Parallax2D" parent="." unique_id=1889786971]
+scale = Vector2(1.9, 1.9)
+scroll_offset = Vector2(-278.00003, 324.00003)
+repeat_size = Vector2(575, 0)
+repeat_times = 3
+
+[node name="OrigBig" type="Sprite2D" parent="Parallax2D" unique_id=903146942]
+scale = Vector2(0.25, 0.266)
+texture = ExtResource("1_wtcfe")

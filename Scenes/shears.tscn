@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://cbgiraw2hwv4s"]
+
+[ext_resource type="Script" uid="uid://bbwt0odnlke1q" path="res://Scenes/shears.gd" id="1_rvds4"]
+[ext_resource type="Texture2D" uid="uid://dl27jqis3i8bo" path="res://Assets/theshears.png" id="2_rvds4"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_hje5i"]
+radius = 3.0
+height = 14.0
+
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=835931897]
+script = ExtResource("1_rvds4")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1392709205]
+scale = Vector2(3, 3)
+texture = ExtResource("2_rvds4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1975190155]
+scale = Vector2(3, 3)
+shape = SubResource("CapsuleShape2D_hje5i")

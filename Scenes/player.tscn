@@ -1,0 +1,40 @@
+[gd_scene format=3 uid="uid://b66r7nth1828m"]
+
+[ext_resource type="Script" uid="uid://bbgnagswo8vx" path="res://Scripts/player.gd" id="1_cvnsp"]
+[ext_resource type="Texture2D" uid="uid://b87qshjqlvwdk" path="res://Assets/White_sheep.png" id="2_cvnsp"]
+[ext_resource type="Texture2D" uid="uid://b5o6286y6q0jx" path="res://Assets/lightgrey_sheep.png" id="3_3smsa"]
+[ext_resource type="Texture2D" uid="uid://coi2dtd2tdnow" path="res://Assets/grey_sheep.png" id="4_8erm5"]
+[ext_resource type="Texture2D" uid="uid://gle16im1847i" path="res://Assets/darkgrey_sheep.png" id="5_f1ek2"]
+[ext_resource type="Texture2D" uid="uid://dbw0dygttp3fa" path="res://Assets/blackgrey_sheep.png" id="6_tx1dd"]
+[ext_resource type="Texture2D" uid="uid://b5nftvvfbhrgx" path="res://Assets/rainbow_sheep.png" id="7_gymyn"]
+
+[node name="Player" type="CharacterBody2D" unique_id=588926896 groups=["player"]]
+scale = Vector2(4, 4)
+script = ExtResource("1_cvnsp")
+
+[node name="CollisionShape2D" type="CollisionPolygon2D" parent="." unique_id=1963905743]
+scale = Vector2(2, 2)
+polygon = PackedVector2Array(5.7999997, -1.3, 4.7, -1.3, 4.7999997, -2.7999997, 4.2999997, -2.6999998, 4.2999997, -3.2999997, 3.2999997, -3.2999997, 3.2999997, -3.7999997, 0.29999998, -3.7999997, 0.19999999, -3.2999997, -0.6999999, -3.2999997, -0.6999999, -2.7999997, -1.3, -2.7999997, -1.3, -2.3, -4.7, -2.1999998, -4.7, -0.39999998, -5.7999997, -0.29999998, -5.7999997, 1.3, -4.7999997, 1.3, -4.8999996, 2.1999998, -4.8999996, 2.1, -4.2999997, 2.1999998, -4.3999996, 2.7999997, -3.1999998, 2.7999997, -3.2999997, 3.1999998, -2.7999997, 3.1999998, -2.7999997, 3.7999997, -1.1999999, 3.7999997, -1.1999999, 3.2999997, 0.6999999, 3.2999997, 0.6999999, 3.7999997, 2.3, 3.8999999, 2.3999999, 2.3999999, 2.7999997, 2.3999999, 2.7999997, 1.8, 3.3999999, 1.8, 3.2999997, 0.79999995, 5.7999997, 0.79999995)
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=633865848]
+texture = ExtResource("2_cvnsp")
+
+[node name="CompositeSheeps" type="Node2D" parent="." unique_id=359851538]
+
+[node name="whitesheep" type="Sprite2D" parent="CompositeSheeps" unique_id=1843102909]
+texture = ExtResource("2_cvnsp")
+
+[node name="lightgreysheep" type="Sprite2D" parent="CompositeSheeps" unique_id=623992916]
+texture = ExtResource("3_3smsa")
+
+[node name="greysheep" type="Sprite2D" parent="CompositeSheeps" unique_id=1980983245]
+texture = ExtResource("4_8erm5")
+
+[node name="darkgreysheep" type="Sprite2D" parent="CompositeSheeps" unique_id=28061695]
+texture = ExtResource("5_f1ek2")
+
+[node name="blacksheep" type="Sprite2D" parent="CompositeSheeps" unique_id=1132172863]
+texture = ExtResource("6_tx1dd")
+
+[node name="rainbowsheep" type="Sprite2D" parent="CompositeSheeps" unique_id=2067434976]
+texture = ExtResource("7_gymyn")
