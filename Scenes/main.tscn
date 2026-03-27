@@ -99,15 +99,6 @@ tile_set = SubResource("TileSet_1bvp3")
 [node name="Player" parent="." unique_id=588926896 instance=ExtResource("3_8gbba")]
 position = Vector2(343, 153)
 
-[node name="Camera2D" type="Camera2D" parent="Player" unique_id=395388067]
-position = Vector2(-24.25, 4.5)
-rotation = 3.1415925
-scale = Vector2(0.25655442, 0.38622427)
-limit_left = 0
-limit_top = 0
-limit_right = 1152
-limit_bottom = 648
-
 [node name="Coin" parent="." unique_id=1449230121 instance=ExtResource("4_jjvhh")]
 position = Vector2(102, 283)
 scale = Vector2(1.25, 1.25)
